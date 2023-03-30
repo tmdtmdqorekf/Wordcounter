@@ -1,0 +1,35 @@
+<body>
+    <h1>- Wordcount Machine -</h1>
+    <h2>This is for counting words. Please write any words below!</h2>
+    <form action={% url 'result' %} method='GET'>
+    <textarea rows="20" cols="60" name='text'></textarea>
+    </br>
+    <button type="submit">Count!</button>
+    </form>
+</body>
+
+<style>
+    body {
+        text-align: center;
+        background-color: coral;
+        font-family: Times New Roman, "Times New Roman", sans;
+        color: green;
+    }
+
+    button {
+        padding: 0.5rem 1rem;
+
+        text-align: center;
+        text-decoration: none;
+      
+        display: inline-block;
+        width: auto;
+      
+        border: none;
+        border-radius: 4px;
+    }
+
+    button:hover {
+        color: coral;
+    }
+</style>
